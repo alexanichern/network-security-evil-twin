@@ -1,5 +1,5 @@
 from fastapi.responses import JSONResponse
-from core_app import app
+from app import app
 from queue import Queue
 import time
 
