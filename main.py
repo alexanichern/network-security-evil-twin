@@ -1,9 +1,8 @@
 import uvicorn
 from fastapi.responses import JSONResponse
 from app import app
-from rate_limiter import createEndPoint
 from evil_twin_guard import EvilTwinDetectionMiddleware
-
+from endpoint import createEndPoint
 app.add_middleware(EvilTwinDetectionMiddleware)
 
 async def testFunction():
